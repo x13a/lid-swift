@@ -32,7 +32,7 @@ public struct Lid {
 
 public class LidNotifier {
     
-    public typealias Callback = (_ arg: Int ) -> ()
+    public typealias Callback = (_ arg: Int) -> ()
     public static let kClamshellStateBit = 1 << 0
     public static let kClamshellSleepBit = 1 << 1
     
