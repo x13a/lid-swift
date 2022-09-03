@@ -9,6 +9,11 @@ import Lid
 
 func main() {
     print(Lid.getState())
+    let notifier = LidNotifier { arg in
+        print(arg & LidNotifier.kClamshellStateBit)
+    }
+    assert(notifier != nil)
+    RunLoop.main.run()
 }
 
 main()
